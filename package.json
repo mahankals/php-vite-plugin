@@ -1,0 +1,48 @@
+{
+  "name": "php-vite-plugin",
+  "version": "1.0.0",
+  "description": "A framework-agnostic Vite plugin to integrate Vite with any PHP application",
+  "type": "module",
+  "main": "index.cjs",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "bin": {
+    "php-vite-plugin": "bin/cli.js"
+  },
+  "files": [
+    "templates",
+    "index.*"
+  ],
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "keywords": [
+    "vite",
+    "php",
+    "cakephp",
+    "symfony",
+    "plugin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "picocolors": "^1.1.1"
+  },
+  "peerDependencies": {
+    "vite": "^7.0.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "author": "Atul Mahankal <atulmahankal@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahankals/php-vite-plugin"
+  },
+  "homepage": "https://github.com/mahankals/php-vite-plugin",
+  "bugs": "https://github.com/mahankals/php-vite-plugin/issues"
+}
